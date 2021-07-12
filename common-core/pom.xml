@@ -5,7 +5,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>common-core</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -36,7 +36,7 @@
         <url>http://localhost:8081/repository/maven-releases/</url>
         <developerConnection>scm:git:https://github.com/Ethan730/maven-release-plugin-test.git</developerConnection>
         <connection>scm:git:https://github.com/Ethan730/maven-release-plugin-test.git</connection>
-      <tag>common-core-1.0.0</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <build>
