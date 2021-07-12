@@ -7,7 +7,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>common-core</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -33,4 +33,29 @@
             <url>http://localhost:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
+
+    <scm>
+        <url>http://localhost:8081/repository/maven-releases/</url>
+        <developerConnection>scm:git:https://github.com/Ethan730/maven-release-plugin-test.git</developerConnection>
+        <connection>scm:git:https://github.com/Ethan730/maven-release-plugin-test.git</connection>
+    </scm>
+
+    <build>
+        <plugins>
+            <!-- 发布插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <!--git用户名-->
+                    <username>Ethan730</username>
+                    <!--git密码-->
+                    <password>647874WANg</password>
+                    <!--mvn目标指令-->
+                    <goals>-f pom.xml deploy</goals>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
